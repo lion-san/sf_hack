@@ -1,7 +1,7 @@
 1.Git pullで最新化する
 2.bundle install --without production
 3.bundle exec rake db:reset
-4.bundle exec rake db:migrate
+#4.bundle exec rake db:migrate 不要でした
 5.bundle exec rake db:populate
 6.bundle exec rake test:prepare
 
@@ -10,6 +10,10 @@
 
 ==ローカル環境での実行==
 8.rails server
+
+
+==gitの最新化==
+
 
 ==Heroku環境での実行==
 9.git push heroku
