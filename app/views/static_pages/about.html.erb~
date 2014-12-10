@@ -1,5 +1,5 @@
 <% provide(:title, 'About Us') %>
 <h1>About Us</h1>
 <p>
-<%= render 'underconstruction'%>
+Sorry! This page is underconstraction.
 </p>
