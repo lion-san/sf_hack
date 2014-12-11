@@ -1,0 +1,7 @@
+require 'spec_helper'
+
+describe "JoingroupsPages" do
+	subject { page }
+
+	descri
+end

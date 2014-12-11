@@ -3,6 +3,7 @@
 
 <%= will_paginate %>
 <%= link_to 'Create group...', new_group_path %>
+<br>
 
 <ul class="users">
   <%= render @groups %>

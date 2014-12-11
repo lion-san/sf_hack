@@ -9,7 +9,7 @@
       <%= f.label :group_name %>
       <%= f.text_field :group_name %>
 
-      <%= f.label :group_detail %>
+      <%= f.label :grouop_detail %>
       <%= f.text_area :group_detail, placeholder: "Please describe about group..." %>
 
       <%= f.submit "Create group", class: "btn btn-large btn-primary" %>

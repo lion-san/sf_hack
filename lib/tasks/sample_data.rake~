@@ -44,8 +44,8 @@ end
 
 def make_groups
   50.times do |n|
-    group_name = "Example-#{n+1}club."
-    group_detail  = Faker::Lorem.sentence(5)
+    group_name  = Faker::Lorem.sentence(5)
+    group_detail = "Example-#{n+1}club."
     Group.create!(group_name:     group_name,
                  group_detail:   group_detail)
   end

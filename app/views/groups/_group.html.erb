@@ -1,0 +1,10 @@
+<li>
+  <% if current_user.join?(@user) %>
+    <% #render 'join' %>
+  <% else %>
+    <% #render 'joined' %>
+  <% end %>
+  <%= group.group_name %> | 
+  <%= group.group_detail %> 
+</li>
+

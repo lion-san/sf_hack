@@ -34,8 +34,8 @@ describe Groupjoin do
 
   describe "join" do
     before do
-      @test.save!
-      @user.save!
+      @test.save
+      @user.save
       @test.join!(@user) 
     end
     it { should be_joined(@user) }

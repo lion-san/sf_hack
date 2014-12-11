@@ -11,7 +11,7 @@ class Group < ActiveRecord::Base
     groupjoins.find_by(user_id: user.id).destroy
   end
 
-  def joined?(user)
+  def joined2?(user)
     groupjoins.find_by(user_id: user.id)
   end
 end
