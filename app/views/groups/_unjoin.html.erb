@@ -1,0 +1,6 @@
+<%= form_for(object.groupjoins.find_by(group_id: object.id, user_id: current_user.id), 
+          html: { method: :delete }) do  |f| %>
+  <%= f.submit "Joined", class: "btn btn-large btn-primary" %>
+  <div id="joinuser"><%= render('counter', object: object) %></div>
+<% end %>
+

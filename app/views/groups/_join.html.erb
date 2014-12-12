@@ -1,5 +1,5 @@
-<%= form_for(current_user.relationships.build(followed_id: @user.id),
-             remote: true) do |f| %>
-  <div><%= f.hidden_field :followed_id %></div>
-  <%= f.submit "Join", class: "btn btn-large btn-primary" %>
+<%= form_for(current_user.groupjoins.build(group_id: object.id)) do |f| %>
+  <div><%= f.hidden_field :group_id %></div>
+  <%= f.submit "Join", class: "btn btn-large" %>
+  <div id="joinuser"><%= render('counter', object: object) %></div>
 <% end %>

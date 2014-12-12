@@ -1,9 +1,12 @@
 <li>
-  <% if current_user.join?(@user) %>
-    <% #render 'join' %>
+<div id="join_form">
+  <% if group.joined?(current_user) %>
+    <%= render 'unjoin', object: group %>
   <% else %>
-    <% #render 'joined' %>
+    <%= render 'join', object: group %>
   <% end %>
+</div>
+  <div id="joinuser"></div>
   <%= group.group_name %> | 
   <%= group.group_detail %> 
 </li>

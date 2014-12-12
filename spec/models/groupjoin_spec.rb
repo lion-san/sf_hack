@@ -38,14 +38,26 @@ describe Groupjoin do
       @user.save!
       @test.join!(@user) 
     end
-    it { should be_joined(@user) }
+
+    it { expect(@test.joined?(@user)).to be_valid  }
   end
 
   describe "unjoin" do
     before do
+      @test2 = Group.new(group_name: "Example2",
+                              group_detail: "This is an example.") 
+
+      @user2 = User.new(name: "Example User", email: "user2@example.com",
+                     password: "foobar", password_confirmation: "foobar")
+      @test.save!
+      @user.save!
+      @test2.save!
+      @user2.save!
+      @test.join!(@user) 
+      @test2.join!(@user) 
       @test.unjoin(@user) 
     end
 
-    it { should_not be_joined(@user) }
+    #it { expect(@test.joined?(@user)).to be_valid }
   end
 end
