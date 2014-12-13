@@ -1,5 +1,7 @@
 <html>
 <head>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+
 <script>
 //Facebook sample
   window.fbAsyncInit = function() {
@@ -20,24 +22,26 @@
 //Facebook sample
 
 //My add
-function getWall() {
-  FB.api('/me/feed'
-     , { access_token: '...' }
-     , function(response) {
-         // 取得後のコールバック
-         var contents = '';
-           for (var i = 0; i < response.data.length; i++) {
-             for (var elem in response.data[i]) {
-                 contents += elem + ' : ' + response.data[i][elem] + '<br>';
-             }
-             contents += '<hr>';
-         }
-               
-         // ウォールの内容を表示させる
-         document.getElementById('result').innerHTML = contents;
-});
-
-
+function getFriend() {
+    FB.login(function (response) {
+        if (response.authResponse) {
+            var body = 'Reading JS SDK documentation';
+ 
+            FB.api('/me/friends', function(response) {
+                if (!response || response.error) {
+                    var read_err_text = 'Error';
+                    $("#read_result").text(read_err_text);
+                } else {
+                    var read_ok_text = response.summary.total_count;
+                    $("#read_result").text(read_ok_text);
+                }
+            });
+ 
+        } else {
+            alert('User is logged out');
+        }
+    }, {scope: 'public_profile,user_friends'});
+};
 </script>
 </head>
 
@@ -45,8 +49,8 @@ function getWall() {
 <h1>My facebook app</h1>
 
 <div>
-  <input type="button" value="get wall" onclick="getWall();">
-    <div id="result"></div>
+  <input type="button" value="get friend" onclick="getFriend();">
+  <div id="read_result"></div>
 </div>
 
 <div

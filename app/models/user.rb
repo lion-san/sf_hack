@@ -42,6 +42,14 @@ class User < ActiveRecord::Base
     relationships.find_by(followed_id: other_user.id).destroy
   end
 
+  def settoken(token)
+    @graph = Koala::Facebook::API.new(token)
+    logger.debug("+++++++++++++++++++++++++++")
+  end
+
+  def graph
+    return @graph 
+  end
 
 #Private
   private

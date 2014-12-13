@@ -14,10 +14,15 @@
         <%= render 'shared/joinedgroups', object: @user %>
       </section>
     </aside>
-    <div class="span8">
+    <div class="span6">
       <h3>Micropost Feed</h3>
       <%= render 'shared/feed' %>
     </div>
+
+    <div class="span2">
+      <%= render 'shared/facebook' %>
+    </div>
+
   </div>
 <% else %>
   <div class="center hero-unit">

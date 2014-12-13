@@ -1,0 +1,9 @@
+<% if session[:token] %>
+  <h4>Facebook</h4>
+  <%= image_tag(session[:token].get_object("me?fields=picture")["picture"]["data"]["url"]) %>
+
+  <div>
+    <h5>Friends</h5>
+    <%= session[:token].get_connections("me", "friends", api_version:"v2.2").raw_response["summary"]["total_count"] %>
+  </div>
+<% end %>
