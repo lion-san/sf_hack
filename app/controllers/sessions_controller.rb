@@ -27,9 +27,10 @@ class SessionsController < ApplicationController
       #OAuth時はパスワード必須回避
       if user.save(context: :oauth_login)
         flash[:success] = "Welcome to the sFANS PRESS!"
-        redirect_to user
+        #redirect_to user
+        sign_in user
+        redirect_back_or user
       else
-logger.debug(user.errors.full_messages)
         render 'new'
       end
     end

@@ -4,6 +4,7 @@ namespace :db do
     make_users
     make_microposts
     make_relationships
+    make_group5
     make_groups
  end
 end
@@ -50,3 +51,27 @@ def make_groups
                  group_detail:   group_detail)
   end
 end
+
+def make_group5
+  group_name = "Baseball club."
+  group_detail  = "This is baseball cliub."
+  Group.create!(group_name:     group_name,
+               group_detail:   group_detail)
+  group_name = "Fishing club."
+  group_detail  = "This is fishing cliub."
+  Group.create!(group_name:     group_name,
+               group_detail:   group_detail)
+  group_name = "Cooking club."
+  group_detail  = "This is cooking cliub."
+  Group.create!(group_name:     group_name,
+               group_detail:   group_detail)
+  group_name = "Shoping club."
+  group_detail  = "This is shopping cliub."
+  Group.create!(group_name:     group_name,
+               group_detail:   group_detail)
+  group_name = "Game club."
+  group_detail  = "This is game cliub."
+  Group.create!(group_name:     group_name,
+               group_detail:   group_detail)
+end
+
