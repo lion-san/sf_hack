@@ -16,6 +16,9 @@ git add .    or git add -all ./
 git commit -m "メッセージ"
 
 ==Heroku環境での実行==
+==FB==
+heroku config:set FACEBOOK_KEY=
+heorku config:set FACEBOOK_SECRET=
 git push heroku
 heroku pg:reset DATABASE
 heroku run rake db:migrate

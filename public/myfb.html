@@ -1,0 +1,58 @@
+<html>
+<head>
+<script>
+//Facebook sample
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '960684717293532',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+//Facebook sample
+
+//My add
+function getWall() {
+  FB.api('/me/feed'
+     , { access_token: '...' }
+     , function(response) {
+         // 取得後のコールバック
+         var contents = '';
+           for (var i = 0; i < response.data.length; i++) {
+             for (var elem in response.data[i]) {
+                 contents += elem + ' : ' + response.data[i][elem] + '<br>';
+             }
+             contents += '<hr>';
+         }
+               
+         // ウォールの内容を表示させる
+         document.getElementById('result').innerHTML = contents;
+});
+
+
+</script>
+</head>
+
+<body>
+<h1>My facebook app</h1>
+
+<div>
+  <input type="button" value="get wall" onclick="getWall();">
+    <div id="result"></div>
+</div>
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+</body>

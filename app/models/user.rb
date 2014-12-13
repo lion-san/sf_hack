@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, length: { minimum: 6 }
+  validates :password, presence: false, on: :oauth_login
+
 
   def User.new_remember_token
     SecureRandom.urlsafe_base64
@@ -40,6 +42,8 @@ class User < ActiveRecord::Base
     relationships.find_by(followed_id: other_user.id).destroy
   end
 
+
+#Private
   private
 
     def create_remember_token

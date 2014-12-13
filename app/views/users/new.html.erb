@@ -19,6 +19,10 @@
       <%= f.password_field :password_confirmation %>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+<strong>
+      <%= link_to "Sign up with Facebook", "/auth/facebook" %>  
+      <% link_to "Sign up with Twitter", "/auth/twitter" %>  
+</strong>
     <% end %>
   </div>
 </div>

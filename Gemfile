@@ -40,3 +40,8 @@ group :production do
 end
 
 gem 'rb-readline'
+
+#Auth
+gem 'omniauth-facebook'
+#Facebook API
+gem 'koala'
