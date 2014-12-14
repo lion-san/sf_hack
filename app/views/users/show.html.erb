@@ -10,11 +10,16 @@
     <section>
       <%= render 'shared/stats' %>
     </section>
+
     <section>
+      <%= render 'shared/department' %>
+    </section>
+    <section>
+
       <%= render 'shared/joinedgroups', object: @user %>
     </section>
   </aside>
-  <div class="span6">
+  <div class="span8">
     <%= render 'follow_form' if signed_in? %>
     <% if @user.microposts.any? %>
       <h3>Microposts (<%= @user.microposts.count %>)</h3>
@@ -23,9 +28,6 @@
       </ol>
       <%= will_paginate @microposts %>
     <% end %>
-  </div>
-  <div class="span2">
-    <%= render 'shared/facebook' %>
   </div>
 
 </div>

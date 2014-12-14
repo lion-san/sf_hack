@@ -3,8 +3,6 @@ class GroupjoinsController < ApplicationController
 
   def create
     currnet_group(Group.find(params[:groupjoin][:group_id]))
-    #logger.debug("=========================================")
-    #logger.debug(params[:groupjoin][:group_id])
     @currentg.join!(current_user)
     redirect_to groups_path  #non Ajax
     #respond_to do |format|
@@ -26,8 +24,6 @@ class GroupjoinsController < ApplicationController
   private
     def currnet_group(group)
       @currentg = group
-#logger.debug("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX") 
-#logger.debug(@currentg) 
     end
 
 end

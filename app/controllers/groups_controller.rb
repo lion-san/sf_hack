@@ -26,6 +26,20 @@ class GroupsController < ApplicationController
     end
   end
 
+  def select
+
+    @group = Group.find_by(id: params[:id]) 
+
+    tmp = Array.new
+    list = @group.groupjoins
+    list.each do |obj|
+      tmp.push(User.find_by(id: obj.user_id))
+    end 
+
+    @groupusers = tmp
+
+  end
+
   # PATCH/PUT /groups/1
   # PATCH/PUT /groups/1.json
   def update

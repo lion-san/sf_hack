@@ -1,13 +1,19 @@
 <% joins = object.groupjoins %>
 <h2>Join groups(<%= joins.count %>)</h2>
-<table class="table-hover table">
+<table class="table">
   <% if joins.any? %>
     <% joins.each do |join| %>
       <% group = Group.find_by(id: join.group_id)  %>
         <tr><td>
-        <span><h5><%= group.group_name %></h5></span>
-        <span><%= group.group_detail %></span>
+<div class="stat">
+  <a href="<%= select_group_path(group)  %>">
+    <strong class="stat">
+         <%= group.group_name %>
+    </strong><br>
+         <%= group.group_detail %>
         <span class="timestamp"><%= group.groupjoins.count %> joined.</span>
+  </a>
+</div>
         </td></tr>
     <% end %>
   <% else %>

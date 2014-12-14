@@ -9,8 +9,14 @@
   <% end %>
 </td>
 <td>
-  <h3><%= group.group_name %></h3>
-  <h4><%= group.group_detail %></h4>
+<div>
+  <a href="<%= select_group_path(group) %>">
+<p class="lead"> 
+  <%= group.group_name %>
+  <%= group.group_detail %>
+</p>
+  </a>
+</div>
 </td>
 </tr>
 </table>

@@ -1,0 +1,8 @@
+<% provide(:title, @group.group_name) %>
+<h1><%= @group.group_name %></h1>
+
+<ul class="users">
+<% @groupusers.each do |obj| %>
+  <%= render 'groupuser', object: obj %>
+<% end %>
+</ul>
