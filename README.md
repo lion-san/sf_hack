@@ -1,13 +1,13 @@
 SFA X SNS
 =========
 
-A communication tool that connects the internal and external network of contacts.
+A communication Web Application that connects the internal and external network of contacts.
 
-社内外の人脈をつなぐコミュニケーションツール
+社内外の人脈をつなぐコミュニケーションウェブ
 
 ## Description
 
-The SFA x SNS is a communication tool that connects the internal and external network of contacts. You can expect a new business value by connecting the network of contacts obtained through the activities of a variety of external and in-house members.
+The SFA x SNS is a communication Web Application that connects the internal and external network of contacts. You can expect a new business value by connecting the network of contacts obtained through the activities of a variety of external and in-house members.
 
 SFA X SNSは社内外の人脈をつなぐコミュニケーションツールです。様々な社外での活動を通して得られた人脈と社内のメンバをつなぐことで、新たなビジネス価値が期待できます。
 
