@@ -25,6 +25,55 @@ SFA X SNSは社内外の人脈をつなぐコミュニケーションツール�
 
 - 社外活動のビジネス評価の可視化
 
+## Setup
+
+- リポジトリの入手
+> git clone https://github.com/lion-san/sf_hack.git
+
+- Facebook設定
+FacebookDevloperでKEYとSECRETを取得し、以下の通り環境変数に設定してください。
+> EXPORT FACEBOOK_KEY=xxxxxxxx
+>
+> EXPORT FACEBOOK_SECRET=xxxxxx
+>
+> heroku config:set FACEBOOK_KEY=xxxxxx
+>
+> heorku config:set FACEBOOK_SECRET=xxxxxx
+
+- ローカル環境へのセットアップ
+> cd sf_hack
+>
+> bundle install --without production
+>
+> bundle exec rake db:reset
+
+- ローカル環境での実行
+> rails server
+
+- Heroku環境での実行
+> heroku login   <= your account
+>
+> heroku create  <= for New app
+>
+> git push heroku master
+>
+> heroku pg:reset DATABASE
+>
+> heroku run rake db:migrate
+
+- テストデータの登録（テストデータが必要な場合のみ）
+テストデータが必要な場合は、事前に以下を実行してください。
+> bundle exec rake db:populate
+>
+> bundle exec rake test:prepare
+>
+> bundle exec rspec spec/
+>
+> heroku run rake db:populate
+
+- Heroku上でのアプリの実行
+> heroku open
+
 ## Usage
 
 ###Registration
