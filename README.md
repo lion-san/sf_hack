@@ -13,7 +13,7 @@ The SFA x SNS is a communication Web Application that connects the internal and 
 
 - Visualization of business evaluation of outside activities
 
-## Usage
+##Usage
 
 ###Registration
 
