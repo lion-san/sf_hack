@@ -7,11 +7,11 @@ A communication Web Application that connects the internal and external network 
 
 The SFA x SNS is a communication Web Application that connects the internal and external network of contacts. You can expect a new business value by connecting the network of contacts obtained through the activities of a variety of external and in-house members.
 
--Discovery of new needs of competitors and customers
+- Discovery of new needs of competitors and customers
 
--Acquisition of new potential customers
+- Acquisition of new potential customers
 
--Visualization of business evaluation of outside activities
+- Visualization of business evaluation of outside activities
 
 ## Usage
 
@@ -25,11 +25,11 @@ If you **sign up with facebook**, associated with the user information of Facebo
 
 Please sign in by clicking on the **sign in** in the upper right.
 
-If you **sign in with Facebook**, you sign in from ** sign in with facebook **.
+If you **sign in with Facebook**, you sign in from **sign in with facebook**.
 
 ###Follow the other users
 
-Select the user to be worried about in the users view, and then click the ** Follow **.
+Select the user to be worried about in the users view, and then click the **Follow**.
 
 ###Join in user's group
 
