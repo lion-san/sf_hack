@@ -79,7 +79,7 @@ No License
 
 ## Author
 
-[yohei](https://github.com/kouic)
+[lion-san](https://github.com/lion-san)
 
 
 
