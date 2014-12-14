@@ -27,8 +27,6 @@ SFA X SNSは社内外の人脈をつなぐコミュニケーションツール�
 
 ###Registration
 
-###登録
-
 Click the **sign up now!** on the Home tab, please register the user information.
 
 ホーム画面から**sign up now!**をクリックして、ユーザ情報を登録してください。
@@ -38,8 +36,6 @@ If you **sign up with facebook**, associated with the user information of Facebo
 **Facebookを利用してサインインする**と、Facebookのユーザ情報が関連付けられます。
 
 ###Start
-
-###利用開始
 
 Please sign in by clicking on the **sign in** in the upper right.
 
@@ -51,23 +47,17 @@ Facebookでサインインをした場合は、**sign in with facebook**から�
 
 ###Follow the other users
 
-###ユーザをフォローする
-
 Select the user to be worried about in the users view, and then click the ** Follow **.
 
 usersビューから気になるユーザを選択し、**Follow**をクリックします。
 
 ###Join in user's group
 
-###グループに参加する
-
 Click on the ** Join ** for a group to be intrested in the group view.
 
 groupビューから気になるグループに対して、**Join**をクリックします。
 
 ###Remark
-
-###コメントする
 
 **Post** your commnet in the home view.
 
