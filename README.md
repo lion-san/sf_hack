@@ -5,6 +5,8 @@ A communication Web Application that connects the internal and external network 
 
 社内外の人脈をつなぐコミュニケーションウェブ
 
+![SFA × SNS](http://i.imgur.com/7RagI5g.png, SFA × SNS)
+
 ## Description
 
 The SFA x SNS is a communication Web Application that connects the internal and external network of contacts. Employees who are managed by Salesforce will connect the own personal connections obtained through the activities of a variety of external, such as Facebook.New business value, such as the following is expected.
